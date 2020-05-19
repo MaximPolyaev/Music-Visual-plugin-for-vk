@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Music Visual",
+    "version": "1.0",
+    "description": "Music visual for vk",
+    "browser_action": {
+        "default_icon": "music.png"
+    },
+    "content_scripts": [ 
+        {
+            "matches": [
+                "https://vk.com/*",
+                "https://music.yandex.ru/*"
+            ],
+            "js": ["music-scripts/music-script.js"]
+            
+        }
+    ]
+}
